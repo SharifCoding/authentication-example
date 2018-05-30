@@ -1,10 +1,12 @@
 ## User Authentication - Signup/Login with BCrypt
 
-![Login](./app/src/img/Login.png)
+![Login](./app/src/img/LogIn.png)
 
 Users Signup and Login application using BCrypt encryption.
 
-<b>Please Note:</b> This repository contain two repositories; Express/Mongoose API code is in `/api` directory (managing data), and React code is in `/app` directory (frontend).
+<b>Please Note:</b>
+- This repository contain two repositories; Express/Mongoose API code is in `/api` directory (managing data), and React code is in `/app` directory (frontend).
+- Currently validation only applied to `login.jsx` file.
 
 ### Built-on:
 - [Node.js](https://nodejs.org/en/) - Node Package Manager
@@ -36,8 +38,8 @@ This will run the server and frontend, open [http://localhost:8080](http://local
 If you want to end the process hold `control` and press `c` in mac, if you are not using mac hold `ctrl` and press `c`.
 
 #### BCrypt encryption applied to password
-![Login](./app/src/img/Encryption.png)
+![Encryption](./app/src/img/Encryption.png)
 
 #### BCrypt encryption appearing on MongoDb
-![Login](./app/src/img/MongoDB.png)
+![MongoDB](./app/src/img/MongoDB.png)
 
