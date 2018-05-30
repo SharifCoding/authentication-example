@@ -39,36 +39,41 @@ class Login extends React.Component {
   render() {
     return (
       <div>
-        <h1>Login</h1>
-        <div>
-          <label htmlFor="email">
+        <h1>Login Form</h1>
+        <div className="imgcontainer">
+          <img src={require('../img/img_avatar.png')} alt="Avatar" className="avatar" />
+        </div>
+        <div className="container">
+          <div>
+            <label htmlFor="email">
             Email:
-            <input
-              type="email"
-              name="email"
-              value={this.state.email}
-              onChange={this.handleInputChange}
-            />
-          </label>
-        </div>
-        <div>
-          <label htmlFor="email">
+              <input
+                type="email"
+                name="email"
+                value={this.state.email}
+                onChange={this.handleInputChange}
+              />
+            </label>
+          </div>
+          <div>
+            <label htmlFor="password">
             Password:
-            <input
-              type="text"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleInputChange}
-            />
-          </label>
-        </div>
-        <div>
-          <button onClick={this.handleLogin}>Login</button> or <Link to="/sign-up">Sign Up</Link>
-        </div>
-        {
+              <input
+                type="password"
+                name="password"
+                value={this.state.password}
+                onChange={this.handleInputChange}
+              />
+            </label>
+          </div>
+          <div>
+            <button onClick={this.handleLogin}>Login</button> or <Link to="/sign-up">Sign Up</Link>
+          </div>
+          {
           this.state.errorMessage &&
           <div><span>{this.state.errorMessage}</span></div>
         }
+        </div>
       </div>
     );
   }
